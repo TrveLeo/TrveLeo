@@ -1,8 +1,8 @@
 # 👨🏻‍💻 Leandro Baldan
 
-**Engenheiro Eletricista | Desenvolvedor de Software**
+**Aspirante a Engenheiro Eletricista | Desenvolvedor de Software**
 
-Sou **Engenheiro Eletricista graduado** e **Desenvolvedor de Software**, atuando no desenvolvimento de soluções tecnológicas para resolver problemas reais do dia a dia. Trabalho com sistemas críticos voltados à **operação, monitoramento e gestão**, unindo engenharia, software, dados e automação.
+Sou  graduando **Engenheiro Eletricista** e **Desenvolvedor de Software**, atuando no desenvolvimento de soluções tecnológicas para resolver problemas reais do dia a dia. Trabalho com sistemas críticos voltados à **operação, monitoramento e gestão**, unindo engenharia, software, dados e automação.
 
 Atualmente, atuo na **Mola Mola**, prestando serviços para a **Aevo Service**, no setor de **energia fotovoltaica**, desenvolvendo e mantendo aplicações críticas para monitoramento de usinas, automação de processos e integração de sistemas.
 
