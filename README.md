@@ -54,8 +54,8 @@ Ajudo pequenas e médias empresas a reduzir tarefas manuais, integrar sistemas e
 
 Quer conversar sobre um processo da sua empresa?
 
-📧 ti@molamola.com.br  
+📧 leandro.baldan.ferreira@gmail.com  
 💼 [LinkedIn](https://linkedin.com/in/leandrobaldan)  
-💬 WhatsApp: *(adicionar)*
+💬 WhatsApp: 27996956042
 
 > Envie uma mensagem descrevendo a tarefa, a frequência e as ferramentas utilizadas.
