@@ -1,45 +1,61 @@
-# 👨🏻‍💻 Leandro Baldan
+# Leandro Baldan
 
-**Aspirante a Engenheiro Eletricista | Desenvolvedor backend**
+**Consultor de Automação e Dados para PMEs**
 
-Sou  graduando **Engenheiro Eletricista** e **Desenvolvedor Backend**, atuando no desenvolvimento de soluções tecnológicas para resolver problemas reais do dia a dia. Trabalho com sistemas críticos voltados à **operação, monitoramento e gestão**, unindo engenharia, software, dados e automação.
-
-Atualmente, atuo na **Mola Mola**, prestando serviços para a **Aevo Service**, no setor de **energia fotovoltaica**, desenvolvendo e mantendo aplicações críticas para monitoramento de usinas, automação de processos e integração de sistemas.
-
-Tenho experiência prática com **monitoramento de usinas fotovoltaicas**, sistemas de aquisição e processamento de dados, **bots de Telegram**, automação de processos, integração de sistemas e aplicações backend, sempre com foco em **eficiência, confiabilidade e escalabilidade**.
-
-Atuo principalmente com **Python e Django**, bancos de dados relacionais (**PostgreSQL / Timescale**), análise e visualização de dados, **APIs REST**, web scraping e **inteligência artificial**, incluindo visão computacional com **YOLO**. Também desenvolvo **agentes de IA** voltados à automação de fluxos, auditoria de dados e apoio à tomada de decisão.
-
-Possuo experiência com **n8n**, mensageria e orquestração de workflows, integrando APIs, sistemas externos, planilhas e bots. No backend, trabalho com **Docker**, ambientes virtualizados, versionamento, autenticação, controle de permissões e modelagem de bancos de dados.
-
+Ajudo pequenas e médias empresas a reduzir tarefas manuais, integrar sistemas e transformar dados dispersos em informações úteis. Desenvolvo automações, APIs, dashboards e sistemas web sob medida — com foco em eficiência operacional e redução de retrabalho.
 
 ---
 
-## 🧠 Áreas de Atuação
+## O que faço
 
-- Automação de processos e sistemas operacionais  
-- Monitoramento e análise de dados (setor energético)  
-- Desenvolvimento backend e integração de sistemas  
-- Visão computacional  
-- Bots, workflows e orquestração de processos  
-- DevOps, qualidade e confiabilidade de sistemas  
-
----
-
-## 🤖 Linguagens e Tecnologias
-
-- Python | Django  
-- JavaScript | Node.js  
-- HTML | CSS  
-- PostgreSQL | TimescaleDB
-- Docker  
-- Git  
-- n8n  
-- YOLO (Visão Computacional)  
+| Serviço | Problema que resolve |
+|---|---|
+| **Automação de processos** | Equipe executa atividades repetitivas sujeitas a erro |
+| **Integração de sistemas** | Informações copiadas manualmente entre plataformas |
+| **Dashboards gerenciais** | Indicadores dispersos em planilhas e sistemas |
+| **Sistemas web internos** | Processo depende de planilhas ou formulários isolados |
+| **Automação de relatórios** | Relatórios preparados e distribuídos manualmente |
 
 ---
 
-## 📫 Contato
+## Projetos em destaque
 
-- GitHub: https://github.com/TrveLeo  
+> ⚙️ Portfólio em construção — projetos demonstrativos sendo publicados.
 
+| Projeto | Descrição | Stack |
+|---|---|---|
+| [ConciliaFlow](#) | Conciliação automática de planilhas e pagamentos | Python · FastAPI · PostgreSQL · React |
+| [OpsPulse](#) | Dashboard operacional com pipeline automatizado | Python · SQL · Plotly · Docker |
+| [LeadDesk](#) | Mini-CRM web para centralizar leads e funil comercial | Django · PostgreSQL · React |
+| [ConnectHub](#) | Integração entre plataformas com reprocessamento de falhas | FastAPI · Redis · Webhooks |
+| [ReportBot](#) | Geração e distribuição automática de relatórios | Python · SQL · PDF · E-mail |
+
+---
+
+## Stack principal
+
+**Backend:** Python · FastAPI · Django · PostgreSQL · TimescaleDB  
+**Frontend:** React · Next.js  
+**Infra:** Docker · CI/CD · REST APIs · Webhooks  
+**Dados:** Pandas · SQL · Plotly · Streamlit  
+
+---
+
+## Como trabalho
+
+1. **Diagnóstico** — entendo o processo, volume, ferramentas e impacto antes de qualquer código
+2. **Escopo fechado** — entregáveis definidos, prazo e critérios de aceite acordados
+3. **Entrega documentada** — manual, vídeo, testes e relatório de entrega
+4. **Continuidade** — manutenção, monitoramento e evolução após o projeto
+
+---
+
+## Contato
+
+Quer conversar sobre um processo da sua empresa?
+
+📧 ti@molamola.com.br  
+💼 [LinkedIn](https://linkedin.com/in/leandrobaldan)  
+💬 WhatsApp: *(adicionar)*
+
+> Envie uma mensagem descrevendo a tarefa, a frequência e as ferramentas utilizadas.
