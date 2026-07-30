@@ -20,15 +20,14 @@ Ajudo pequenas e médias empresas a reduzir tarefas manuais, integrar sistemas e
 
 ## Projetos em destaque
 
-> ⚙️ Portfólio em construção — projetos demonstrativos sendo publicados.
+Casos demonstrativos, com dados fictícios de semente fixa. O número de cada um
+sai de teste contra o gabarito do próprio repositório — é reproduzível, não é
+estimativa.
 
-| Projeto | Descrição | Stack |
-|---|---|---|
-| [ConciliaFlow](#) | Conciliação automática de planilhas e pagamentos | Python · FastAPI · PostgreSQL · React |
-| [OpsPulse](#) | Dashboard operacional com pipeline automatizado | Python · SQL · Plotly · Docker |
-| [LeadDesk](#) | Mini-CRM web para centralizar leads e funil comercial | Django · PostgreSQL · React |
-| [ConnectHub](#) | Integração entre plataformas com reprocessamento de falhas | FastAPI · Redis · Webhooks |
-| [ReportBot](#) | Geração e distribuição automática de relatórios | Python · SQL · PDF · E-mail |
+| Projeto | Problema que resolve | Resultado | Stack |
+|---|---|---|---|
+| [ConciliaFlow](https://github.com/TrveLeo/conciliaflow) | Conciliação manual de planilhas e pagamentos entre fontes diferentes | 77,2% de conciliação automática · 61 testes | Python · FastAPI · Pandas · PostgreSQL · HTML/CSS/JS sem build |
+| [LeadDesk](https://github.com/TrveLeo/leaddesk) | Contatos e follow-up perdidos em planilha e WhatsApp | 15,0% de prospect pesquisado para lead · 164 testes · 100% de cobertura | Python · FastAPI · PostgreSQL · HTML/CSS/JS sem build |
 
 ---
 
