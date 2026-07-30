@@ -54,8 +54,8 @@ Ajudo pequenas e médias empresas a reduzir tarefas manuais, integrar sistemas e
 
 Quer conversar sobre um processo da sua empresa?
 
-📧 leandro.baldan.ferreira@gmail.com  
-💼 [LinkedIn](https://linkedin.com/in/leandrobaldan)  
-💬 WhatsApp: 27996956042
+📧 leandrobaldan.contato@gmail.com  
+💼 [LinkedIn](https://www.linkedin.com/in/leandro-baldan/)  
+💬 WhatsApp Business: (27) 99695-6042
 
 > Envie uma mensagem descrevendo a tarefa, a frequência e as ferramentas utilizadas.
