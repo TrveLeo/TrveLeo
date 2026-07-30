@@ -53,6 +53,7 @@ estimativa.
 
 Quer conversar sobre um processo da sua empresa?
 
+🌐 [leandrobaldan.vercel.app](https://leandrobaldan.vercel.app)  
 📧 leandrobaldan.contato@gmail.com  
 💼 [LinkedIn](https://www.linkedin.com/in/leandro-baldan/)  
 💬 WhatsApp Business: (27) 99695-6042
