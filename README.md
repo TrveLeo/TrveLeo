@@ -1,61 +1,45 @@
-# Leandro Baldan
+# 👨🏻‍💻 Leandro Baldan
 
-**Consultor de Automação e Dados para PMEs**
+**Aspirante a Engenheiro Eletricista | Desenvolvedor backend**
 
-Ajudo pequenas e médias empresas a reduzir tarefas manuais, integrar sistemas e transformar dados dispersos em informações úteis. Desenvolvo automações, APIs, dashboards e sistemas web sob medida — com foco em eficiência operacional e redução de retrabalho.
+Sou  graduando **Engenheiro Eletricista** e **Desenvolvedor Backend**, atuando no desenvolvimento de soluções tecnológicas para resolver problemas reais do dia a dia. Trabalho com sistemas críticos voltados à **operação, monitoramento e gestão**, unindo engenharia, software, dados e automação.
 
----
+Atualmente, atuo na **Mola Mola**, prestando serviços para a **Aevo Service**, no setor de **energia fotovoltaica**, desenvolvendo e mantendo aplicações críticas para monitoramento de usinas, automação de processos e integração de sistemas.
 
-## O que faço
+Tenho experiência prática com **monitoramento de usinas fotovoltaicas**, sistemas de aquisição e processamento de dados, **bots de Telegram**, automação de processos, integração de sistemas e aplicações backend, sempre com foco em **eficiência, confiabilidade e escalabilidade**.
 
-| Serviço | Problema que resolve |
-|---|---|
-| **Automação de processos** | Equipe executa atividades repetitivas sujeitas a erro |
-| **Integração de sistemas** | Informações copiadas manualmente entre plataformas |
-| **Dashboards gerenciais** | Indicadores dispersos em planilhas e sistemas |
-| **Sistemas web internos** | Processo depende de planilhas ou formulários isolados |
-| **Automação de relatórios** | Relatórios preparados e distribuídos manualmente |
+Atuo principalmente com **Python e Django**, bancos de dados relacionais (**PostgreSQL / Timescale**), análise e visualização de dados, **APIs REST**, web scraping e **inteligência artificial**, incluindo visão computacional com **YOLO**. Também desenvolvo **agentes de IA** voltados à automação de fluxos, auditoria de dados e apoio à tomada de decisão.
+
+Possuo experiência com **n8n**, mensageria e orquestração de workflows, integrando APIs, sistemas externos, planilhas e bots. No backend, trabalho com **Docker**, ambientes virtualizados, versionamento, autenticação, controle de permissões e modelagem de bancos de dados.
+
 
 ---
 
-## Projetos em destaque
+## 🧠 Áreas de Atuação
 
-Casos demonstrativos, com dados fictícios de semente fixa. O número de cada um
-sai de teste contra o gabarito do próprio repositório — é reproduzível, não é
-estimativa.
-
-| Projeto | Problema que resolve | Resultado | Stack |
-|---|---|---|---|
-| [ConciliaFlow](https://github.com/TrveLeo/conciliaflow) | Conciliação manual de planilhas e pagamentos entre fontes diferentes | 77,2% de conciliação automática · 61 testes | Python · FastAPI · Pandas · PostgreSQL · HTML/CSS/JS sem build |
-| [LeadDesk](https://github.com/TrveLeo/leaddesk) | Contatos e follow-up perdidos em planilha e WhatsApp | 15,0% de prospect pesquisado para lead · 164 testes · 100% de cobertura | Python · FastAPI · PostgreSQL · HTML/CSS/JS sem build |
+- Automação de processos e sistemas operacionais  
+- Monitoramento e análise de dados (setor energético)  
+- Desenvolvimento backend e integração de sistemas  
+- Visão computacional  
+- Bots, workflows e orquestração de processos  
+- DevOps, qualidade e confiabilidade de sistemas  
 
 ---
 
-## Stack principal
+## 🤖 Linguagens e Tecnologias
 
-**Backend:** Python · FastAPI · Django · PostgreSQL · TimescaleDB  
-**Frontend:** React · Next.js  
-**Infra:** Docker · CI/CD · REST APIs · Webhooks  
-**Dados:** Pandas · SQL · Plotly · Streamlit  
-
----
-
-## Como trabalho
-
-1. **Diagnóstico** — entendo o processo, volume, ferramentas e impacto antes de qualquer código
-2. **Escopo fechado** — entregáveis definidos, prazo e critérios de aceite acordados
-3. **Entrega documentada** — manual, vídeo, testes e relatório de entrega
-4. **Continuidade** — manutenção, monitoramento e evolução após o projeto
+- Python | Django  
+- JavaScript | Node.js  
+- HTML | CSS  
+- PostgreSQL | TimescaleDB
+- Docker  
+- Git  
+- n8n  
+- YOLO (Visão Computacional)  
 
 ---
 
-## Contato
+## 📫 Contato
 
-Quer conversar sobre um processo da sua empresa?
+- GitHub: https://github.com/TrveLeo  
 
-🌐 [leandrobaldan.vercel.app](https://leandrobaldan.vercel.app)  
-📧 leandrobaldan.contato@gmail.com  
-💼 [LinkedIn](https://www.linkedin.com/in/leandro-baldan/)  
-💬 WhatsApp Business: (27) 99695-6042
-
-> Envie uma mensagem descrevendo a tarefa, a frequência e as ferramentas utilizadas.
