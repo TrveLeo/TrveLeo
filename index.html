@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leandro Baldan — Automação, Dados e Sistemas Web</title>
+  <meta name="description" content="Desenvolvedor e consultor de automação e dados. Python, FastAPI, Django, React e PostgreSQL. Portfólio com casos publicados e resultados verificáveis.">
+  <link rel="canonical" href="https://trveleo.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Leandro Baldan — Automação, Dados e Sistemas Web">
+  <meta property="og:description" content="Portfólio de projetos em Python, FastAPI e dados, com resultados reproduzíveis a partir dos testes de cada repositório.">
+  <meta property="og:url" content="https://trveleo.github.io/">
+  <meta property="og:image" content="https://trveleo.github.io/img/conciliaflow.png">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230f172a'/><text x='50' y='68' font-size='54' font-family='monospace' font-weight='bold' fill='%2338bdf8' text-anchor='middle'>LB</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a href="#topo" class="brand">
+      <span class="brand-mark">LB</span>
+      <span class="brand-text">Leandro Baldan</span>
+    </a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#projetos">Projetos</a>
+      <a href="#stack">Stack</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Alternar tema claro e escuro">
+      <span aria-hidden="true" class="theme-icon">◐</span>
+    </button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <section class="hero" id="topo">
+    <div class="container hero-inner">
+      <p class="eyebrow">Vitória, ES · disponível para projetos</p>
+      <h1>Automação, dados e sistemas web<br><span class="accent">para quem opera na prática</span></h1>
+      <p class="lead">
+        Sou desenvolvedor de software e consultor de automação. Transformo processo manual,
+        planilha espalhada e integração feita no copiar-e-colar em sistema com dado confiável,
+        teste automatizado e documentação. Trabalho principalmente com Python, FastAPI, Django,
+        React e PostgreSQL.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="#projetos">Ver projetos</a>
+        <a class="btn btn-ghost" href="#contato">Entrar em contato</a>
+      </div>
+      <ul class="hero-facts">
+        <li><strong>3 anos</strong><span>com Python, dados e integrações</span></li>
+        <li><strong>2 cases</strong><span>públicos, com número reproduzível</span></li>
+        <li><strong>Eng. Elétrica</strong><span>IFES — formação em operação e medição</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="projetos">
+    <div class="container">
+      <p class="eyebrow">Projetos</p>
+      <h2>Casos publicados, com o número saindo do teste</h2>
+      <p class="section-lead">
+        São aplicações completas, com dados fictícios de semente fixa. Cada indicador citado
+        aqui é conferido por teste automatizado contra o gabarito do próprio repositório —
+        não é estimativa nem projeção.
+      </p>
+
+      <article class="case">
+        <a class="case-shot" href="https://github.com/TrveLeo/conciliaflow" target="_blank" rel="noopener">
+          <img src="img/conciliaflow.png" alt="Tela do ConciliaFlow mostrando o resumo da conciliação e a tabela de lançamentos" loading="lazy" width="1440" height="900">
+        </a>
+        <div class="case-body">
+          <div class="case-head">
+            <h3>ConciliaFlow</h3>
+            <span class="tag">Conciliação financeira</span>
+          </div>
+          <p class="case-problem">
+            <strong>Problema:</strong> conciliar extrato bancário com o relatório de vendas era
+            trabalho manual de planilha, com risco de erro e sem rastro do porquê de cada
+            correspondência.
+          </p>
+          <p class="case-solution">
+            <strong>Solução:</strong> motor de conciliação com regras determinísticas em camadas
+            (exata, por tolerância de valor e data, por agrupamento), fila de revisão assistida
+            para o que não bate sozinho e exportação pronta para o Excel.
+          </p>
+          <ul class="metrics">
+            <li><strong>77,2%</strong><span>conciliado automaticamente no dataset demo</span></li>
+            <li><strong>61</strong><span>testes automatizados</span></li>
+          </ul>
+          <ul class="chips">
+            <li>Python</li><li>FastAPI</li><li>Pandas</li><li>PostgreSQL</li><li>Docker</li><li>HTML/CSS/JS sem build</li>
+          </ul>
+          <a class="text-link" href="https://github.com/TrveLeo/conciliaflow" target="_blank" rel="noopener">Ver o repositório e o case completo →</a>
+        </div>
+      </article>
+
+      <article class="case case-reverse">
+        <a class="case-shot" href="https://github.com/TrveLeo/leaddesk" target="_blank" rel="noopener">
+          <img src="img/leaddesk.png" alt="Pipeline comercial do LeadDesk com as oito etapas lado a lado" loading="lazy" width="1440" height="900">
+        </a>
+        <div class="case-body">
+          <div class="case-head">
+            <h3>LeadDesk</h3>
+            <span class="tag">CRM com prospecção acoplada</span>
+          </div>
+          <p class="case-problem">
+            <strong>Problema:</strong> prospecção em planilha, histórico de conversa no WhatsApp
+            e conversão para lead feita recadastrando dado à mão — pipeline em que ninguém confia.
+          </p>
+          <p class="case-solution">
+            <strong>Solução:</strong> uma aplicação só, ligando os dois lados do funil: prospect
+            com segmento e origem, meta semanal de pesquisa e contato, conversão para lead sem
+            recadastro e pipeline comercial de 8 etapas com próxima ação e histórico de interações.
+          </p>
+          <ul class="metrics">
+            <li><strong>15,0%</strong><span>de prospect pesquisado para lead (18/120)</span></li>
+            <li><strong>2,5%</strong><span>de prospect pesquisado para cliente (3/120)</span></li>
+            <li><strong>100%</strong><span>de cobertura de teste da aplicação · 17 endpoints</span></li>
+          </ul>
+          <ul class="chips">
+            <li>Python 3.12</li><li>FastAPI</li><li>SQLAlchemy 2.0</li><li>PostgreSQL</li><li>Docker Compose</li><li>Pytest</li>
+          </ul>
+          <a class="text-link" href="https://github.com/TrveLeo/leaddesk" target="_blank" rel="noopener">Ver o repositório e o case completo →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="stack">
+    <div class="container">
+      <p class="eyebrow">Stack</p>
+      <h2>Com o que eu trabalho</h2>
+      <div class="stack-grid">
+        <div class="stack-card">
+          <h3>Backend</h3>
+          <ul>
+            <li>Python · FastAPI · Django · Django REST</li>
+            <li>SQLAlchemy 2.0 · Pydantic</li>
+            <li>APIs REST · webhooks · integrações</li>
+          </ul>
+        </div>
+        <div class="stack-card">
+          <h3>Dados</h3>
+          <ul>
+            <li>PostgreSQL · TimescaleDB · SQL</li>
+            <li>Pandas · Plotly · Streamlit</li>
+            <li>Modelagem, ETL e indicadores</li>
+          </ul>
+        </div>
+        <div class="stack-card">
+          <h3>Frontend</h3>
+          <ul>
+            <li>JavaScript · TypeScript</li>
+            <li>React · Next.js</li>
+            <li>HTML/CSS sem build quando cabe</li>
+          </ul>
+        </div>
+        <div class="stack-card">
+          <h3>Infra e qualidade</h3>
+          <ul>
+            <li>Docker · Docker Compose · CI/CD</li>
+            <li>Pytest · cobertura de teste</li>
+            <li>Git · GitHub · documentação técnica</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experiencia">
+    <div class="container">
+      <p class="eyebrow">Experiência</p>
+      <h2>Onde eu construí isso</h2>
+      <ol class="timeline">
+        <li>
+          <div class="tl-when">ago/2025 — atual</div>
+          <div class="tl-what">
+            <h3>Desenvolvedor de Software · Mola Mola</h3>
+            <p>
+              Aplicações de monitoramento, operação e gestão de usinas fotovoltaicas.
+              Python, Django, JavaScript, React e SQL, com integrações via APIs REST,
+              plataformas SCADA e sistemas de monitoramento. Funcionalidades, correções,
+              refatoração, testes, documentação e visualização de dados em tempo real.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="tl-when">fev/2025 — ago/2025</div>
+          <div class="tl-what">
+            <h3>Assistente de Engenharia · AEVO Energia</h3>
+            <p>
+              Operação e Manutenção e Centro de Engenharia e Performance. Relatórios de
+              desempenho, geração e zeladoria, acompanhamento de indicadores operacionais
+              e disponibilidade de ativos, documentação de ordens de serviço.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="tl-when">abr/2024 — jan/2025</div>
+          <div class="tl-what">
+            <h3>Pesquisador · IFES</h3>
+            <p>
+              P&amp;D em visão computacional: otimização de modelos YOLOv8 para detecção de
+              objetos, ajuste de hiperparâmetros, análise de métricas e validação
+              experimental com foco em precisão, recall e inferência em tempo real.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="tl-when">Formação</div>
+          <div class="tl-what">
+            <h3>Bacharelado em Engenharia Elétrica · IFES</h3>
+            <p>Instituto Federal do Espírito Santo.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="como-trabalho">
+    <div class="container">
+      <p class="eyebrow">Como trabalho</p>
+      <h2>Diagnóstico antes de código</h2>
+      <ol class="steps">
+        <li><strong>Diagnóstico</strong><span>Entendo processo, volume, ferramentas e impacto antes de escrever qualquer linha.</span></li>
+        <li><strong>Escopo fechado</strong><span>Entregáveis, prazo e critérios de aceite acordados por escrito.</span></li>
+        <li><strong>Entrega documentada</strong><span>Manual, vídeo, testes automatizados e relatório de entrega.</span></li>
+        <li><strong>Continuidade</strong><span>Manutenção, monitoramento e evolução depois do projeto, se fizer sentido.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section-contact" id="contato">
+    <div class="container">
+      <h2>Vamos conversar</h2>
+      <p class="section-lead">
+        Para projeto de automação, vaga ou parceria técnica. Descreva a tarefa, a frequência
+        e as ferramentas envolvidas — respondo com o que dá para automatizar e como.
+      </p>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:leandrobaldan.contato@gmail.com">
+          <span class="contact-label">E-mail</span>
+          <span class="contact-value">leandrobaldan.contato@gmail.com</span>
+        </a>
+        <a class="contact-card" href="https://wa.me/5527996956042" target="_blank" rel="noopener">
+          <span class="contact-label">WhatsApp</span>
+          <span class="contact-value">(27) 99695-6042</span>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/leandro-baldan/" target="_blank" rel="noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">in/leandro-baldan</span>
+        </a>
+        <a class="contact-card" href="https://github.com/TrveLeo" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/TrveLeo</span>
+        </a>
+      </div>
+      <p class="contact-note">
+        Trabalho de consultoria para PMEs, com pacotes e escopo definidos, fica em
+        <a href="https://leandrobaldan.vercel.app" target="_blank" rel="noopener">leandrobaldan.vercel.app</a>.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>Leandro Baldan · Vitória, ES</span>
+    <span>Feito em HTML e CSS, sem build. <a href="https://github.com/TrveLeo/TrveLeo" target="_blank" rel="noopener">Código deste site</a>.</span>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var stored = null;
+    try { stored = localStorage.getItem('tema'); } catch (e) {}
+    if (stored) root.setAttribute('data-theme', stored);
+
+    document.getElementById('theme-toggle').addEventListener('click', function () {
+      var atual = root.getAttribute('data-theme');
+      if (!atual) {
+        atual = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      var novo = atual === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', novo);
+      try { localStorage.setItem('tema', novo); } catch (e) {}
+    });
+  })();
+</script>
+
+</body>
+</html>
