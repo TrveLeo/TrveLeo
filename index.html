@@ -59,7 +59,7 @@
         <a class="btn btn-ghost" href="#contato">Entrar em contato</a>
       </div>
       <ul class="hero-facts">
-        <li><strong>2 cases</strong><span>públicos, com número reproduzível</span></li>
+        <li><strong>3 cases</strong><span>públicos, com número reproduzível</span></li>
         <li><strong>Eng. Elétrica</strong><span>IFES — formação em operação e medição</span></li>
       </ul>
     </div>
@@ -132,6 +132,38 @@
             <li>Python 3.12</li><li>FastAPI</li><li>SQLAlchemy 2.0</li><li>PostgreSQL</li><li>Docker Compose</li><li>Pytest</li>
           </ul>
           <a class="text-link" href="https://github.com/TrveLeo/leaddesk" target="_blank" rel="noopener">Ver o repositório e o case completo →</a>
+        </div>
+      </article>
+
+      <article class="case">
+        <a class="case-shot" href="https://github.com/TrveLeo/chatdesk" target="_blank" rel="noopener">
+          <img src="img/chatdesk.png" alt="Painel do ChatDesk com métricas, lista de conversas por estado e a transcrição de um atendimento que virou lead" loading="lazy" width="1440" height="900">
+        </a>
+        <div class="case-body">
+          <div class="case-head">
+            <h3>ChatDesk</h3>
+            <span class="tag">Atendimento com RAG</span>
+          </div>
+          <p class="case-problem">
+            <strong>Problema:</strong> a mesma dúvida respondida à mão dez vezes por semana, e a
+            conversa morrendo no mensageiro. Automatizar com um LLM cru é pior: bot que inventa
+            prazo ou desconto não economiza trabalho, cria passivo.
+          </p>
+          <p class="case-solution">
+            <strong>Solução:</strong> o bot responde só com o que está nos documentos da empresa,
+            citando a fonte, e recusa o resto — a recusa é decidida no código, antes de o modelo
+            ser chamado, então não existe caminho em que ele responda sem contexto. Quem demonstra
+            intenção de contratar é qualificado e vira lead no CRM, com a transcrição junto.
+          </p>
+          <ul class="metrics">
+            <li><strong>5/5</strong><span>perguntas fora da base corretamente recusadas</span></li>
+            <li><strong>19/19</strong><span>perguntas da base respondidas da fonte certa, incluindo 9 reformuladas na língua do cliente</span></li>
+            <li><strong>100%</strong><span>de cobertura de teste da aplicação · 206 testes</span></li>
+          </ul>
+          <ul class="chips">
+            <li>Python 3.12</li><li>FastAPI</li><li>PostgreSQL + pgvector</li><li>RAG</li><li>Telegram Bot API</li><li>Docker Compose</li><li>Pytest</li>
+          </ul>
+          <a class="text-link" href="https://github.com/TrveLeo/chatdesk" target="_blank" rel="noopener">Ver o repositório e o case completo →</a>
         </div>
       </article>
     </div>
