@@ -32,6 +32,8 @@
     </a>
     <nav class="nav" aria-label="Navegação principal">
       <a href="#projetos">Projetos</a>
+      <a href="#pesquisa">Pesquisa</a>
+      <a href="#produtos">Produtos</a>
       <a href="#stack">Stack</a>
       <a href="#experiencia">Experiência</a>
       <a href="#contato">Contato</a>
@@ -59,7 +61,7 @@
         <a class="btn btn-ghost" href="#contato">Entrar em contato</a>
       </div>
       <ul class="hero-facts">
-        <li><strong>3 cases</strong><span>públicos, com número reproduzível</span></li>
+        <li><strong>8 projetos</strong><span>públicos, com número reproduzível</span></li>
         <li><strong>Eng. Elétrica</strong><span>IFES — formação em operação e medição</span></li>
       </ul>
     </div>
@@ -164,6 +166,199 @@
             <li>Python 3.12</li><li>FastAPI</li><li>PostgreSQL + pgvector</li><li>RAG</li><li>Telegram Bot API</li><li>Docker Compose</li><li>Pytest</li>
           </ul>
           <a class="text-link" href="https://github.com/TrveLeo/chatdesk" target="_blank" rel="noopener">Ver o repositório e o case completo →</a>
+        </div>
+      </article>
+
+      <article class="case case-reverse">
+        <a class="case-shot" href="https://github.com/TrveLeo/clauseguard" target="_blank" rel="noopener">
+          <img src="img/clauseguard.png" alt="Terminal com a execução da demo do ClauseGuard: o laudo para no portão humano, é retomado e lista as violações com o trecho da política que as motivou" loading="lazy" width="1440" height="900">
+        </a>
+        <div class="case-body">
+          <div class="case-head">
+            <h3>ClauseGuard</h3>
+            <span class="tag">Agente com portão humano</span>
+          </div>
+          <p class="case-problem">
+            <strong>Problema:</strong> a PME que assina contrato sem jurídico interno tem política
+            escrita e ninguém a aplica. Prazo de pagamento, teto de multa e foro passam batido, e
+            quando alguém confere a conferência não deixa rastro do que foi olhado nem com base em quê.
+          </p>
+          <p class="case-solution">
+            <strong>Solução:</strong> um grafo de agente que extrai as cláusulas, busca a regra
+            correspondente na base vetorial da política e só então julga — <strong>nada acima do
+            limiar, nenhuma chamada ao modelo</strong>: a cláusula vira "sem regra". A trava contra
+            invenção está no código, não no prompt. Violação de risco alto congela a execução, espera
+            a decisão de um humano e retoma do ponto onde parou, sem reprocessar nada.
+          </p>
+          <ul class="metrics">
+            <li><strong>93,3%</strong><span>de recall na recuperação (14/15) contra o gabarito</span></li>
+            <li><strong>0</strong><span>falso positivo: cláusula fora da política não recupera nada</span></li>
+            <li><strong>92%</strong><span>de cobertura de teste · 30 testes, rodando offline</span></li>
+          </ul>
+          <ul class="chips">
+            <li>Python</li><li>LangGraph</li><li>Claude</li><li>Qdrant</li><li>FastAPI</li><li>PostgreSQL</li><li>Docker Compose</li>
+          </ul>
+          <a class="text-link" href="https://github.com/TrveLeo/clauseguard" target="_blank" rel="noopener">Ver o repositório e o case completo →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="pesquisa">
+    <div class="container">
+      <p class="eyebrow">Pesquisa e dados</p>
+      <h2>Quando o resultado é o achado, não a tela</h2>
+      <p class="section-lead">
+        Dois trabalhos em que o produto é o experimento: hipótese declarada, comparação sob a mesma
+        partição e método descrito ao ponto de outra pessoa reproduzir.
+      </p>
+
+      <article class="case">
+        <a class="case-shot" href="https://github.com/TrveLeo/santander-customer-transaction-prediction" target="_blank" rel="noopener">
+          <img src="img/santander.png" alt="Gráfico de barras do AUC-ROC out-of-fold dos sete modelos, com o LightGBM por feature com contagem em 0,9181 no topo" loading="lazy" width="1440" height="900">
+        </a>
+        <div class="case-body">
+          <div class="case-head">
+            <h3>Santander Customer Transaction Prediction</h3>
+            <span class="tag">Classificação binária · Kaggle</span>
+          </div>
+          <p class="case-problem">
+            <strong>Problema:</strong> prever transação futura a partir de 200 features anônimas, em
+            200.000 linhas com só 10,05% de positivos. Sem nome de coluna, não há intuição de negócio
+            para guiar a engenharia de atributos — o sinal precisa sair da estrutura do próprio dado.
+          </p>
+          <p class="case-solution">
+            <strong>Solução:</strong> a extensão do trabalho descobriu que metade do conjunto de teste
+            é sintética — linha gerada reamostrando cada coluna, que por isso nunca contém um valor
+            inédito. O critério separa as 100.000 linhas reais sem zona cinzenta e sem usar o alvo.
+            Com elas isoladas, a contagem de cada valor vira atributo — e só rende quando o modelo
+            olha uma feature por vez, porque a informação é interação entre duas colunas, não sinal aditivo.
+          </p>
+          <ul class="metrics">
+            <li><strong>0,9181</strong><span>de AUC-ROC out-of-fold, contra 0,8997 do baseline</span></li>
+            <li><strong>100.000</strong><span>linhas sintéticas separadas das reais, sem sobreposição</span></li>
+            <li><strong>5 folds</strong><span>estratificados, mesma semente e partição para todos os modelos</span></li>
+          </ul>
+          <ul class="chips">
+            <li>Python</li><li>LightGBM</li><li>scikit-learn</li><li>Pandas</li><li>NumPy</li><li>LaTeX</li>
+          </ul>
+          <p class="case-nota">
+            A camada original — EDA, três modelos clássicos e o relatório — é trabalho de dupla com
+            Murilo Fabri, na Engenharia Elétrica do IFES. A extensão descrita aqui é individual.
+          </p>
+          <a class="text-link" href="https://github.com/TrveLeo/santander-customer-transaction-prediction" target="_blank" rel="noopener">Ver o repositório e o case completo →</a>
+        </div>
+      </article>
+
+      <article class="case case-reverse">
+        <a class="case-shot" href="https://github.com/TrveLeo/Otimizacao_de_arquitetura_e_hiperparametros_yolov8" target="_blank" rel="noopener">
+          <img src="img/yolov8.png" alt="Precision, recall e mAP@50 dos três modelos YOLOv8: a Small com arquitetura otimizada é a mais alta nas três métricas" loading="lazy" width="1440" height="900">
+        </a>
+        <div class="case-body">
+          <div class="case-head">
+            <h3>Detecção de armas de fogo com YOLOv8</h3>
+            <span class="tag">Visão computacional · IFES</span>
+          </div>
+          <p class="case-problem">
+            <strong>Problema:</strong> câmera de vigilância grava sem parar e ninguém assiste a tudo.
+            Um detector que só roda em GPU de servidor não resolve o problema de quem tem dezenas de
+            câmeras instaladas — o modelo precisa caber no hardware que já está no local.
+          </p>
+          <p class="case-solution">
+            <strong>Solução:</strong> em vez de aumentar a rede, buscar automaticamente uma rede menor
+            que compense a capacidade perdida. O Optuna, com TPE, varreu não só os hiperparâmetros de
+            treino como a própria arquitetura da <em>backbone</em>, acrescentando, removendo e trocando
+            camadas a cada trial, com função objetivo única sobre precision, recall e mAP.
+          </p>
+          <ul class="metrics">
+            <li><strong>0,935</strong><span>de precision, contra 0,829 da Large tradicional</span></li>
+            <li><strong>+17,3 pontos</strong><span>de mAP@50 sobre a rede maior — com arquitetura menor</span></li>
+            <li><strong>3 modelos</strong><span>treinados em 100 épocas cada, sob a mesma validação</span></li>
+          </ul>
+          <ul class="chips">
+            <li>Python</li><li>PyTorch</li><li>Ultralytics YOLOv8</li><li>Optuna (TPE)</li><li>Iniciação científica</li>
+          </ul>
+          <p class="case-nota">
+            Pesquisa de iniciação científica no IFES, 2024. O artigo completo está no repositório.
+          </p>
+          <a class="text-link" href="https://github.com/TrveLeo/Otimizacao_de_arquitetura_e_hiperparametros_yolov8" target="_blank" rel="noopener">Ver o repositório e o artigo →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="produtos">
+    <div class="container">
+      <p class="eyebrow">Produtos próprios</p>
+      <h2>Coisa pequena que roda sozinha</h2>
+      <p class="section-lead">
+        Dois produtos que existem para uso real, não para demonstração: um publica todo dia sem
+        ninguém apertar botão, o outro roda na máquina de quem transmite, sem servidor no meio.
+      </p>
+
+      <article class="case">
+        <a class="case-shot" href="https://trveleo.github.io/religious/" target="_blank" rel="noopener">
+          <img src="img/religious.png" alt="Tela do jogo Conexões Bíblicas do Devocional Diário, com as dezesseis palavras a agrupar" loading="lazy" width="1440" height="900">
+        </a>
+        <div class="case-body">
+          <div class="case-head">
+            <h3>Devocional Diário</h3>
+            <span class="tag">Site estático com publicação automática</span>
+          </div>
+          <p class="case-problem">
+            <strong>Problema:</strong> conteúdo diário em rede social morre no dia em que a pessoa
+            esquece de postar. E manter site, jogos e posts em três lugares diferentes garante que os
+            três vão divergir.
+          </p>
+          <p class="case-solution">
+            <strong>Solução:</strong> o conteúdo mora num arquivo só, lido pelo navegador e pelos
+            scripts de publicação. Editar esse arquivo atualiza o site e os posts ao mesmo tempo.
+            O GitHub Actions gera as imagens, monta o carrossel, o Story, o Reel em vídeo e publica no
+            Instagram e no Threads em horários fixos — sem servidor, sem painel e sem custo de hospedagem.
+          </p>
+          <ul class="metrics">
+            <li><strong>201</strong><span>devocionais no banco único de conteúdo</span></li>
+            <li><strong>90</strong><span>testes automatizados em Vitest, site e automação</span></li>
+            <li><strong>4 rotinas</strong><span>agendadas: devocional, conteúdo do dia, Reel e insights</span></li>
+          </ul>
+          <ul class="chips">
+            <li>JavaScript</li><li>Node</li><li>GitHub Actions</li><li>Vitest</li><li>ffmpeg</li><li>Graph API</li><li>GitHub Pages</li>
+          </ul>
+          <a class="text-link" href="https://trveleo.github.io/religious/" target="_blank" rel="noopener">Abrir o site publicado →</a>
+          <a class="text-link" href="https://github.com/TrveLeo/religious" target="_blank" rel="noopener">Ver o repositório →</a>
+        </div>
+      </article>
+
+      <article class="case case-reverse">
+        <a class="case-shot" href="https://github.com/TrveLeo/placar-live" target="_blank" rel="noopener">
+          <img src="img/placar.png" alt="Overlay do Placar da Live sobre fundo escuro, com seis times ordenados por pontuação e o líder destacado" loading="lazy" width="1440" height="900">
+        </a>
+        <div class="case-body">
+          <div class="case-head">
+            <h3>Placar da Live</h3>
+            <span class="tag">Overlay de transmissão</span>
+          </div>
+          <p class="case-problem">
+            <strong>Problema:</strong> quem transmite ao vivo e monta disputa entre times precisa somar
+            presente na mão ou assinar ferramenta mensal. E overlay que zera quando a cena troca no meio
+            da live destrói a disputa que estava em pé.
+          </p>
+          <p class="case-solution">
+            <strong>Solução:</strong> uma pasta com quatro arquivos que entra como fonte de navegador no
+            LIVE Studio ou no OBS. Escuta a porta local do TikFinity, descobre de quem é o presente,
+            para qual time vai e quanto vale. Grava a pontuação a cada ponto no próprio navegador, então
+            recarregar a fonte não zera nada, e reconecta sozinho se a porta cair. Presente que não está
+            na tabela vale as próprias moedas — presente novo já entra na disputa sem ninguém configurar.
+          </p>
+          <ul class="metrics">
+            <li><strong>4 arquivos</strong><span>numa pasta — sem instalação, servidor ou mensalidade</span></li>
+            <li><strong>1 arquivo</strong><span>de configuração é tudo que o usuário edita</span></li>
+            <li><strong>0</strong><span>dado saindo da máquina de quem transmite</span></li>
+          </ul>
+          <ul class="chips">
+            <li>JavaScript sem build</li><li>WebSocket</li><li>localStorage</li><li>HTML/CSS</li><li>OBS · TikTok LIVE Studio</li>
+          </ul>
+          <a class="text-link" href="https://github.com/TrveLeo/placar-live" target="_blank" rel="noopener">Ver o repositório e o manual →</a>
         </div>
       </article>
     </div>
