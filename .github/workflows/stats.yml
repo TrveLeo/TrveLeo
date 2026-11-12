@@ -1,0 +1,32 @@
+name: Atualizar estatísticas do perfil
+
+on:
+  schedule:
+    - cron: "0 6 * * *"  # todo dia às 03:00 de Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Gerar SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/gen_stats.py TrveLeo
+
+      - name: Commit se mudou
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add img/stats
+          git diff --cached --quiet || git commit -m "chore: atualiza estatísticas do perfil"
+          git push
