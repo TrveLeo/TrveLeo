@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://leandrobaldan.vercel.app"><img src="https://img.shields.io/badge/portf%C3%B3lio-0d0d0d?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfólio"></a>
+  <a href="https://trveleo.github.io/TrveLeo/"><img src="https://img.shields.io/badge/portf%C3%B3lio-0d0d0d?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfólio"></a>
   <a href="https://www.linkedin.com/in/leandro-baldan/"><img src="https://img.shields.io/badge/linkedin-0d0d0d?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:leandrobaldan.contato@gmail.com"><img src="https://img.shields.io/badge/e--mail-b3261e?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail"></a>
 </p>
